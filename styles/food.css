@@ -1,0 +1,153 @@
+/* Food Page Specific Styles */
+.food-page {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main Content with Gradient Background */
+  .food-main {
+    background: linear-gradient(to bottom, #6b4da2, #9f8fc1);
+    min-height: 100vh;
+    padding: 40px 0;
+  }
+  
+  /* Banner Section */
+  .food-banner {
+    margin-bottom: 60px;
+  }
+  
+  .banner-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .banner-content {
+    background-color: rgba(225, 215, 200, 0.9);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .banner-images {
+    width: 30%;
+    height: 150px;
+    overflow: hidden;
+  }
+  
+  .banner-images.left {
+    border-right: 1px solid #ddd;
+  }
+  
+  .banner-images.right {
+    border-left: 1px solid #ddd;
+  }
+  
+  .banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .banner-title {
+    width: 40%;
+    text-align: center;
+  }
+  
+  .banner-title h1 {
+    font-size: 48px;
+    color: #555;
+    font-weight: 300;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  /* Gallery Section */
+  .gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .gallery-item {
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .banner-content {
+      flex-direction: column;
+      padding: 15px;
+    }
+    
+    .banner-images {
+      width: 100%;
+      height: 120px;
+      margin-bottom: 15px;
+    }
+    
+    .banner-images.left {
+      border-right: none;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 15px;
+    }
+    
+    .banner-images.right {
+      border-left: none;
+      border-top: 1px solid #ddd;
+      padding-top: 15px;
+      margin-bottom: 0;
+      order: 3;
+    }
+    
+    .banner-title {
+      width: 100%;
+      margin: 15px 0;
+      order: 2;
+    }
+    
+    .banner-title h1 {
+      font-size: 36px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gallery-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    
+    .food-main {
+      padding: 20px 0;
+    }
+    
+    .food-banner {
+      margin-bottom: 30px;
+    }
+  }

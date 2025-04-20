@@ -1,0 +1,284 @@
+/* About Page Specific Styles */
+.about-page {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main Content with Gradient Background */
+  .about-main {
+    min-height: 70vh;
+    background: linear-gradient(to right, #e6c9a8, #d4c1e0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 30px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .about-title {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  /* Fixed the details section with new row-based layout */
+  .about-details {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .detail-row {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: baseline;
+  }
+  
+  .detail-label {
+    font-weight: bold;
+    color: #555;
+    width: 150px;
+    flex-shrink: 0;
+  }
+  
+  .detail-value {
+    flex-grow: 1;
+  }
+  
+  /* Special styling for the "Submitted by" row */
+  .submitted-by {
+    justify-content: center;
+    margin: 15px 0;
+  }
+  
+  .submitted-by span {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    margin: 30px 0;
+  }
+  
+  .thank-you-message {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  .thank-you-message p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .contact-info {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .contact-info p {
+    margin: 10px 0;
+  }
+  
+  .contact-info a {
+    color: #5f4b8b;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social Media Footer */
+  .social-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #5f4b8b, #7e6bbd);
+    padding: 15px 0;
+  }
+  
+  .social-footer-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin: 0 30px;
+    font-size: 16px;
+  }
+  
+  .social-icon-large {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+  
+  .fb-icon {
+    background-image: url('socials/fb-bar.png');
+  }
+  
+  .ig-icon {
+    background-image: url('socials/ig-bar.png');
+  }
+  
+  .pinterest-icon {
+    background-image: url('socials/p-bar.png');
+  }
+  
+  .twitter-icon {
+    background-image: url('socials/twit-bar.png');
+  }
+  
+  /* Dark Footer */
+  .dark-footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+    position: relative;
+    min-height: 150px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .dark-footer-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Chat Button */
+  .chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #5f4b8b;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .chat-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  /* Make sure the About link in the navigation is properly styled */
+  .top-nav .nav-link.active {
+    color: #91328c;
+    font-weight: bold;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .about-main {
+      padding: 40px 15px;
+      min-height: auto;
+    }
+    
+    .about-content {
+      width: 100%;
+    }
+    
+    .about-title {
+      font-size: 28px;
+    }
+    
+    .about-description {
+      font-size: 16px;
+    }
+    
+    .thank-you-message,
+    .contact-info {
+      padding: 15px;
+    }
+    
+    .social-footer {
+      flex-wrap: wrap;
+    }
+    
+    .social-footer-link {
+      margin: 10px 15px;
+    }
+    
+    .detail-row {
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+    
+    .detail-label {
+      margin-bottom: 5px;
+    }
+    
+    .submitted-by {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-main {
+      padding: 30px 10px;
+    }
+    
+    .about-title {
+      font-size: 24px;
+    }
+    
+    .contact-section h2 {
+      font-size: 20px !important;
+    }
+    
+    .contact-info {
+      max-width: 100% !important;
+    }
+    
+    .social-footer {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .social-footer-link {
+      margin: 5px 0;
+    }
+  }
