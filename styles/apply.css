@@ -186,7 +186,7 @@
     background-repeat: no-repeat;
   }
   
-  /* Make sure the Apply link in the navigation is properly styled */
+
   .top-nav .nav-link.active {
     color: #91328c;
     font-weight: bold;
@@ -198,7 +198,7 @@
     margin-top: 30px;
     padding: 20px;
     border-radius: 12px;
-    background-color: #fffdf7;
+    background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
