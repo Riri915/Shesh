@@ -502,3 +502,30 @@
     background-size: 20px;
   }
 }
+/* Logo in Navigation */
+.nav-logo {
+  height: 30px;
+  width: auto;
+  margin-right: 15px;
+}
+
+/* Adjust left-links to properly align logo and search box */
+.left-links {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive adjustments for the navigation logo */
+@media (max-width: 768px) {
+  .nav-logo {
+    height: 25px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-logo {
+    height: 22px;
+    margin-right: 8px;
+  }
+}

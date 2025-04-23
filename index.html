@@ -4,33 +4,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shesh - Home</title>
+  <link rel="icon" type="image/x-icon" href="logos/logo-main.png">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Top Navigation -->
-  <header class="top-nav">
-    <div class="left-links">
-      <input type="text" placeholder="Search..." class="search-box" />
-    </div>
-    <div class="center-nav">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="apply.html" class="nav-link">Apply</a>
-        <a href="about.html" class="nav-link">About</a>
+  <!-- Welcome Popup -->
+  <div id="welcome-popup" class="welcome-popup">
+    <div class="popup-content">
+      <div class="popup-header">
+        <h2>Welcome to Shesh!</h2>
+        <button id="close-popup" class="close-popup">&times;</button>
       </div>
-    <div class="right-icons">
-        <img src="socials/fb.png" alt="Camera" class="nav-icon" />
-        <img src="socials/ig.png" alt="Facebook" class="nav-icon" />
-        <img src="socials/pinterest.png" alt="Pinterest" class="nav-icon" />
-        <img src="socials/twitter.png" alt="Twitter" class="nav-icon" />
+      <div class="popup-body">
+        <p>Thank you for visiting our creative community!</p>
+        <p>Shesh is a place for art, designs, and creative inspiration. Explore our categories, discover amazing artworks, and join our growing community of artists.</p>
+        <div class="popup-features">
+          <div class="popup-feature">
+            <div class="feature-icon browse-icon"></div>
+            <span>Browse Categories</span>
+          </div>
+          <div class="popup-feature">
+            <div class="feature-icon upload-icon"></div>
+            <span>Submit Your Art</span>
+          </div>
+          <div class="popup-feature">
+            <div class="feature-icon connect-icon"></div>
+            <span>Connect with Artists</span>
+          </div>
+        </div>
+      </div>
+      <div class="popup-footer">
+        <button id="explore-button" class="explore-button">Start Exploring</button>
+      </div>
     </div>
-  </header>
+  </div>
 
-  <!-- Hero Banner -->
-  <section class="hero">
-    <h1>Shesh</h1>
-    <p>Place for Art, Place for Designs,<br/>Place to Shine!</p>
-    <span class="tagline">Web System and Technologies</span>
-  </section>
+<!-- Top Navigation -->
+<header class="top-nav">
+  <div class="left-links">
+    <img src="logos/logo-main.png" alt="Shesh Logo" class="nav-logo">
+    <input type="text" placeholder="Search..." class="search-box" />
+  </div>
+  <div class="center-nav">
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="apply.html" class="nav-link">Apply</a>
+    <a href="about.html" class="nav-link">About</a>
+  </div>
+  <div class="right-icons">
+    <img src="socials/fb.png" alt="Camera" class="nav-icon" />
+    <img src="socials/ig.png" alt="Facebook" class="nav-icon" />
+    <img src="socials/pinterest.png" alt="Pinterest" class="nav-icon" />
+    <img src="socials/twitter.png" alt="Twitter" class="nav-icon" />
+  </div>
+</header>
+
+<!-- Hero Banner -->
+<section class="hero">
+  <h1>Shesh</h1>
+  <p>Place for Art, Place for Designs,<br/>Place to Shine!</p>
+  <span class="tagline">Web System and Technologies</span>
+</section>
 
   <!-- Category Section -->
   <section class="category">
@@ -93,7 +126,7 @@
 
   <!-- About Section -->
   <section class="about-section">
-    <img src="hero/seal.png" alt="Seal" class="about-img" />
+    <img src="logos/logo-main.png" alt="Seal" class="about-img" />
     <div class="about-text">
       <h2>About The Website</h2>
       <p>
